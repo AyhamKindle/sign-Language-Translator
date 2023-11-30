@@ -405,7 +405,7 @@ import {
   
           // if 30 examples are trained, show check mark to the user 
           if (exampleCount == 30) {
-            this.checkMarks[gestureIndex].src = "Images//checkmark.svg";
+            this.checkMarks[gestureIndex].src = "checkmark.svg";
             this.checkMarks[gestureIndex].classList.add("animated");
             this.checkMarks[gestureIndex].classList.add("rotateIn");
           }
