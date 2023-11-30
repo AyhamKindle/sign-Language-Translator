@@ -175,7 +175,7 @@ import {
         this.knn.clearClass(i);
         this.exampleCountDisplay[i].innerText = " 0 examples";
         this.gestureCards[i].removeChild(this.gestureCards[i].childNodes[1]);
-        this.checkMarks[i].src = "loader.gif";
+        this.checkMarks[i].src = "Images\\loader.gif";
       });
   
       // Variables for training information for the user
@@ -198,7 +198,7 @@ import {
       this.trainedCardsHolder.appendChild(gestureCard);
   
       exampleCountDisplay.innerText = " 0 examples";
-      checkMark.src = 'loader.gif';
+      checkMark.src = 'Images\\loader.gif';
       this.exampleCountDisplay.push(exampleCountDisplay);
       this.checkMarks.push(checkMark);
       this.gestureCards.push(gestureCard);
@@ -286,7 +286,7 @@ import {
         this.knn.clearClass(i);
         this.exampleCountDisplay[i].innerText = " 0 examples";
         this.gestureCards[i].removeChild(this.gestureCards[i].childNodes[1]);
-        this.checkMarks[i].src = 'loader.gif';
+        this.checkMarks[i].src = 'Images\\loader.gif';
       });
   
       // Create elements to display training information for the user
@@ -309,7 +309,7 @@ import {
       this.trainedCardsHolder.appendChild(gestureCard);
   
       exampleCountDisplay.innerText = " 0 examples";
-      checkMark.src = 'loader.gif';
+      checkMark.src = 'Images\\loader.gif';
       this.exampleCountDisplay.push(exampleCountDisplay);
       this.checkMarks.push(checkMark);
       this.gestureCards.push(gestureCard);
@@ -321,7 +321,7 @@ import {
         if (gestureCard.style.marginTop == "17px" || gestureCard.style.marginTop == "") {
           this.addWordForm.style.display = "none";
           this.addGestureTitle.innerText = gestName;
-          this.plusImage.src = "retrain.svg";
+          this.plusImage.src = "Images/retrain.svg";
           this.plusImage.classList.add("rotateIn");
   
           // Display done retraining button and the training buttons for the specific gesture
@@ -342,7 +342,7 @@ import {
           this.trainingCommands.innerHTML = "";
           this.addWordForm.style.display = "block";
           this.doneRetrain.style.display = "none";
-          this.plusImage.src = "plus_sign.svg";
+          this.plusImage.src = "Images/plus_sign.svg";
           this.plusImage.classList.add("rotateInLeft");
         }
       });
@@ -355,7 +355,7 @@ import {
   
         this.trainingCommands.innerHTML = "";
         this.addWordForm.style.display = "block";
-        this.plusImage.src = "plus_sign.svg";
+        this.plusImage.src = "Images/plus_sign.svg";
         this.plusImage.classList.add("rotateInLeft");
         this.doneRetrain.style.display = "none";
       });
@@ -405,7 +405,7 @@ import {
   
           // if 30 examples are trained, show check mark to the user 
           if (exampleCount == 30) {
-            this.checkMarks[gestureIndex].src = "checkmark.svg";
+            this.checkMarks[gestureIndex].src = "Images//checkmark.svg";
             this.checkMarks[gestureIndex].classList.add("animated");
             this.checkMarks[gestureIndex].classList.add("rotateIn");
           }
